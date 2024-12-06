@@ -21,7 +21,6 @@ You can see the live demo of this project [here](https://miladjoodi.github.io/Pr
 - **HTML**: For the structure of the form.
 - **CSS**: For custom styling and animations.
 - **JavaScript**: To handle form step transitions, validation, and summary generation.
-- **Tailwind CSS**: For responsive layout and utilities (optional if you'd like to integrate Tailwind for styling in future updates).
 
 ## How to Run
 
@@ -50,4 +49,3 @@ Feel free to open issues and send pull requests for any improvements or fixes. C
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
- 
