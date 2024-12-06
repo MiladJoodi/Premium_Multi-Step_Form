@@ -6,6 +6,8 @@ An interactive multi-step form with smooth transitions and navigation buttons, d
 
 You can see the live demo of this project [here](https://miladjoodi.github.io/Premium_Multi-Step_Form/).
 
+![Multi Step Form GIF](https://s32.picofile.com/file/8481097742/multi.gif)
+
 ## Features
 
 - Multi-step form with smooth transitions.
@@ -48,3 +50,4 @@ Feel free to open issues and send pull requests for any improvements or fixes. C
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+ 
