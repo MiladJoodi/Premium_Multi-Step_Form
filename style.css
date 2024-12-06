@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3em;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-step {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.form-step.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    position: relative;
+}
+
+.step-header {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    background: #16a085;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    font-weight: 600;
+    animation: slideIn 0.5s forwards;
+}
+
+h2 {
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    color: #555;
+    font-weight: 500;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 0.75em 1em;
+    margin-top: 0.5em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1abc9c;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+button {
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.next-step,
+.prev-step {
+    background: #1abc9c;
+    color: #fff;
+}
+
+.next-step:hover,
+.prev-step:hover {
+    background: #16a085;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background: #e74c3c;
+    color: #fff;
+    margin-left: auto;
+}
+
+button[type="submit"]:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#summary p {
+    margin: 1em 0;
+    color: #333;
+    font-weight: 500;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

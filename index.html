@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Multi-Step Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="multi-step-form">
+        <!-- Step 1 -->
+        <div class="form-step active">
+            <div class="step-header">Step 1 of 5</div>
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="buttons">
+                <button type="button" class="next-step">Next</button>
+            </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="form-step">
+            <div class="step-header">Step 2 of 5</div>
+            <h2>Preferences</h2>
+            <label><input type="checkbox" name="pref" value="Option 1"> Option 1</label>
+            <label><input type="checkbox" name="pref" value="Option 2"> Option 2</label>
+            <label><input type="checkbox" name="pref" value="Option 3"> Option 3</label>
+            <div class="buttons">
+                <button type="button" class="prev-step">Previous</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="form-step">
+            <div class="step-header">Step 3 of 5</div>
+            <h2>Upload an Image</h2>
+            <label for="image">Choose an image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <div class="buttons">
+                <button type="button" class="prev-step">Previous</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="form-step">
+            <div class="step-header">Step 4 of 5</div>
+            <h2>Comments</h2>
+            <label for="comments">Comments (max 200 characters):</label>
+            <textarea id="comments" name="comments" maxlength="200"></textarea>
+            <div class="buttons">
+                <button type="button" class="prev-step">Previous</button>
+                <button type="button" class="next-step">Next</button>
+            </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="form-step">
+            <div class="step-header">Step 5 of 5</div>
+            <h2>Summary</h2>
+            <div id="summary"></div>
+            <div class="buttons">
+                <button type="button" class="prev-step">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+<a href="https://github.com/you"><img src="https://github.blog/wp-content/uploads/2008/12/forkme_left_red_aa0000.png" style="position:absolute;top:0;left:0;" alt="Fork me on GitHub"></a>
+    <script src="script.js"></script>
+</body>
+</html>
